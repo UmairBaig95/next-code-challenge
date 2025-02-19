@@ -6,12 +6,6 @@ interface Sale {
 export function processSalesData(sales: Sale[]) {
   let totalSales = 0;
   const categorySales: Record<string, number> = {};
-  console.log("====================================");
-  console.log("sales", sales);
-  console.log("====================================");
-  console.log(categorySales);
-  console.log("====================================");
-  console.log("====================================");
   // Loop through sales data
   for (const sale of sales) {
     totalSales += sale.amount; // Add to total sales
